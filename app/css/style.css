@@ -155,8 +155,6 @@ footer {
   color: #ffffff; }
 
 @media (max-width: 860px) {
-  main {
-    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/intermediate-javascript-requests/wanderlust/background_photo_moble.jpg"); }
   h1 {
     padding-top: 80px;
     font-size: 32px; }
