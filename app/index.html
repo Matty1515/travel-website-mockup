@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>travelsite | Travel Website Mockup</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Work+Sans" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:700|Amatic+SC:700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+      <p class="logo"><i class="fas fa-globe-europe"></i> travelsite</p>
+    </header>
+    <main>
+      <h1>Where do you want to go?</h1>
+      <form autocomplete="off">
+        <input type="text" id="city">
+        <button id="button" type="submit"><i class="fas fa-plane-departure"></i> Submit</button>
+      </form>
+    </main>
+    <div class="container">
+      <div id="destination">
+
+      </div>
+      <div class="sectiontitle">
+        <h2>WEATHER</h2>
+      </div>
+      <section id="weather">
+
+          <div class="weather" id="weather1">
+
+          </div>
+          <div class="weather" id="weather2">
+
+          </div>
+          <div class="weather" id="weather3">
+
+          </div>
+          <div class="weather" id="weather4">
+
+          </div>
+
+      </section>
+      <div class="sectiontitle">
+        <h2>TOP ATTRACTIONS</h2>
+      </div>
+      <section id="venues">
+        <div class="venue" id="venue1">
+
+        </div>
+        <div class="venue" id="venue2">
+
+        </div>
+        <div class="venue" id="venue3">
+
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="footer-div col-sm-4" id="footer-div-api">
+              <h3>APIs</h3>
+              <ul>
+                <li href="#">APIXU</li>
+                <li href="#">Foursqaure API</li>
+              </ul>
+            </div>
+            <div class="footer-div col-sm-4" id="footer-div-resources">
+              <h3>Resources</h3>
+              <ul>
+                <li>MET Office</li>
+                <li>Tripadvisor</li>
+              </ul>
+            </div>
+            <div class="footer-div col-sm-4" id="footer-div-about">
+              <h3>About</h3>
+              <ul>
+                <li>GitHub</li>
+                <li>Email</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-div footer-div-top">
+          <p>To the top!</p>
+        </div>
+      </footer>
+    </div>
+  
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="js/render.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
