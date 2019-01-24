@@ -1,6 +1,46 @@
-/* Before clicking submit */
+/* Global styles */
 html {
+  font-size: 16px;
   scroll-behavior: smooth; }
+
+/* ~67px */
+/* ~50px */
+/* ~38px */
+/* ~28px */
+/* ~21px */
+/* ~12px */
+main h1 {
+  font-family: 'Montserrat', cursive;
+  font-size: 4.209rem;
+  letter-spacing: 1.1px;
+  text-shadow: 3px 3px darkslategrey;
+  color: white; }
+
+.weather h2, #venues h2, .sectiontitle h2 {
+  font-family: Montserrat;
+  font-size: 1.333rem;
+  font-weight: 300;
+  letter-spacing: 3.4px;
+  color: #4a4a4a; }
+
+#venues h3, #destination h3 {
+  font-family: Montserrat;
+  font-size: 1.777rem;
+  font-weight: 300;
+  letter-spacing: 0.9px;
+  color: #27b7c1; }
+
+p {
+  font-family: Work Sans;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #4a4a4a; }
+
+/* Before clicking submit */
+p {
+  line-height: 1.36;
+  padding-left: 5px;
+  text-align: left; }
 
 .logo {
   margin-left: 12px;
@@ -20,29 +60,8 @@ main {
 
 main h1 {
   padding-top: 150px;
-  font-family: 'Montserrat', cursive;
-  font-size: 65px;
-  letter-spacing: 1.1px;
   text-align: center;
-  color: white;
-  margin: auto;
-  text-shadow: 3px 3px darkslategrey; }
-
-h3 {
-  font-family: Work Sans;
-  font-weight: 500;
-  line-height: 1.29;
-  color: #27c19e;
-  padding-left: 5px; }
-
-p {
-  font-family: Work Sans;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.36;
-  text-align: left;
-  color: #4a4a4a;
-  padding-left: 5px; }
+  margin: auto; }
 
 form {
   margin-top: 50px;
@@ -54,27 +73,20 @@ footer {
   height: 50px; }
 
 /* After clicking submit */
-.weather h2 {
-  position: relative;
-  padding: 5px; }
-
 .container {
   max-width: 900px;
   margin: auto;
   visibility: hidden; }
 
 .weather h2 {
-  font-family: Montserrat;
-  font-size: 18px;
-  line-height: 0.78;
-  text-align: left;
-  color: #4a4a4a; }
+  position: relative;
+  padding: 5px; }
 
 .weather {
   width: 200px;
   height: 260px;
   padding: 20px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .weathericon {
   width: 150px;
@@ -83,26 +95,21 @@ footer {
 .venue {
   width: 275px;
   padding: 20px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .venueimage {
   margin-top: 20px; }
 
 #venues h2 {
-  font-family: Work Sans;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 0.77;
   text-align: center;
   padding-top: 5px; }
 
-#destination {
-  font-family: Montserrat;
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 0.9px;
-  text-align: left;
-  color: #27b7c1; }
+#venues h3 {
+  text-align: center;
+  padding-top: 5px; }
+
+#destination h3 {
+  text-align: left; }
 
 .sectiontitle {
   height: 70px;
@@ -110,12 +117,7 @@ footer {
   align-items: center; }
 
 .sectiontitle h2 {
-  font-family: Montserrat;
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: 3.4px;
-  text-align: left;
-  color: #4a4a4a; }
+  text-align: left; }
 
 #venues {
   display: flex;
@@ -139,7 +141,7 @@ footer {
   line-height: 1;
   letter-spacing: 0.4px;
   text-align: left;
-  color: #ffffff; }
+  color: white; }
 
 #button {
   width: 140px;
@@ -152,7 +154,7 @@ footer {
   line-height: 0.94;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #ffffff; }
+  color: white; }
 
 @media (max-width: 860px) {
   h1 {

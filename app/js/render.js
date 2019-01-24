@@ -2,18 +2,18 @@
 // render.js - takes data from API calls in main.js and outputs HTML to index.html
 
 const createVenueHTML = (name, location, iconSource) => {
-  return `<h2>${name}</h2>
+  return `<h3>${name}</h3>
   <img class="venueimage" src="${iconSource}"/>
-  <h3>Address:</h3>
+  <h2>Address:</h2>
   <p>${location.address}</p>
   <p>${location.city}</p>
   <p>${location.country}</p>`;
 };
 
 const createWeatherHTML = (currentDay) => {
-  return `<h2> High: ${currentDay.day.maxtemp_f}</h2>
-    <h2> Low: ${currentDay.day.mintemp_f}</h2>
+  return `<h2>${weekDays[(new Date(currentDay.date)).getDay()]}</h2>
     <img src="https://${currentDay.day.condition.icon}" class="weathericon" />
-    <h2>${weekDays[(new Date(currentDay.date)).getDay()]}</h2>`;
+    <p>High: ${currentDay.day.maxtemp_f}</p>
+    <p>Low: ${currentDay.day.mintemp_f}</p>`;
 };
 

@@ -73,7 +73,7 @@ const renderVenues = (venues) => {
     let venueContent = createVenueHTML(venue.name, venue.location, venueImgSrc);
     $venue.append(venueContent);
   });
-  $destination.append(`<h2>${venues[0].location.city}</h2>`);
+  $destination.append(`<h3>${venues[0].location.city}</h3>`);
 }
 
 const renderForecast = (days) => {
