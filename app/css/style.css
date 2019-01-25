@@ -10,28 +10,28 @@ html {
 /* ~21px */
 /* ~12px */
 main h1 {
-  font-family: 'Montserrat', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 4.209rem;
   letter-spacing: 1.1px;
   text-shadow: 3px 3px darkslategrey;
   color: white; }
 
-.weather h2, #venues h2, .sectiontitle h2 {
-  font-family: Montserrat;
+.weather h2, #venues h2, .sectiontitle h2, footer h3 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.333rem;
   font-weight: 300;
   letter-spacing: 3.4px;
   color: #4a4a4a; }
 
-#venues h3, #destination h3 {
-  font-family: Montserrat;
+#venues h3, #destination h3, .footer-div-top p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.777rem;
   font-weight: 300;
   letter-spacing: 0.9px;
   color: #27b7c1; }
 
-p {
-  font-family: Work Sans;
+p, footer a {
+  font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: 300;
   color: #4a4a4a; }
@@ -67,11 +67,6 @@ form {
   margin-top: 50px;
   height: 100px; }
 
-footer {
-  display: flex;
-  align-items: center;
-  height: 50px; }
-
 /* After clicking submit */
 .container {
   max-width: 900px;
@@ -84,7 +79,7 @@ footer {
 
 .weather {
   width: 200px;
-  height: 260px;
+  height: 300px;
   padding: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
@@ -155,6 +150,38 @@ footer {
   letter-spacing: 0.5px;
   text-align: center;
   color: white; }
+
+footer {
+  background-color: darkslategrey;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-top: 50px; }
+
+footer h3 {
+  color: white; }
+
+footer a {
+  color: #b3b3b3;
+  list-style-type: none; }
+
+footer a:hover {
+  text-decoration: none;
+  color: #b3b3b3; }
+
+.footer-button {
+  transition: 0.5s; }
+
+.footer-button:hover {
+  transform: scale(1.05);
+  cursor: pointer; }
+
+.footer-div-top p {
+  color: white;
+  text-align: center; }
+
+.footer-div-top p:hover {
+  cursor: pointer; }
 
 @media (max-width: 860px) {
   h1 {

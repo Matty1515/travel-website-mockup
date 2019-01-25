@@ -18,6 +18,11 @@ const $venueDivs = [$("#venue1"), $("#venue2"), $("#venue3"), $("#venue4")];
 const $weatherDivs = [$("#weather1"), $("#weather2"), $("#weather3"), $("#weather4")];
 const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
+// jQuery animations
+$('#top-button').on('click', () => {
+  window.scrollTo(0, 0);
+});
+
 // All CSS styles to be applied when submitted
 const submitCSS = () => {
   $container.css("visibility", "visible");

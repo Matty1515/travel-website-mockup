@@ -9,6 +9,7 @@ html {
 $colour-brand: #27b7c1;
 $colour-text: #4a4a4a;
 $colour-white: white;
+$colour-lightgrey: #b3b3b3;
 $colour-darkgrey: darkslategrey;
 $colour-black: black;
 
@@ -22,7 +23,7 @@ $font-size-st: 1rem;
 $font-size-sm: 0.75rem; /* ~12px */
 
 %header-style {
-  font-family: 'Montserrat', cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: $font-size-xxxl;
   letter-spacing: 1.1px;
   text-shadow: 3px 3px $colour-darkgrey;
@@ -30,7 +31,7 @@ $font-size-sm: 0.75rem; /* ~12px */
 }
 %subheader-style {
   // This applies to h2 elements
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: $font-size-md;
   font-weight: 300;
   letter-spacing: 3.4px;
@@ -38,18 +39,21 @@ $font-size-sm: 0.75rem; /* ~12px */
 }
 %alt-subheader-style {
   // This applies to h3 elements - destination name and venue name
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: $font-size-lg;
   font-weight: 300;
   letter-spacing: 0.9px;
   color: $colour-brand;
 }
 %body-style {
-  font-family: Work Sans;
+  font-family: 'Work Sans', sans-serif;
   font-size: $font-size-st;
   font-weight: 300;
   color: $colour-text;
 }
+
+$transition-speed: 0.5s;
+$transition-scale: scale(1.05);
 
 $border-radius: 4px;
 $alt-border-radius: 8px;
@@ -95,12 +99,6 @@ form {
   height: 100px;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  height: 50px;
-}
-
 /* After clicking submit */
 
 .container {
@@ -117,7 +115,7 @@ footer {
 
 .weather {
   width: 200px;
-  height: 260px;
+  height: 300px;
   padding: 20px;
   box-shadow: $shadow;
 }
@@ -204,6 +202,49 @@ footer {
   letter-spacing: 0.5px;
   text-align: center;
   color: $colour-white;
+}
+
+footer {
+  background-color: $colour-darkgrey;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer h3 {
+  @extend %subheader-style;
+  color: $colour-white;
+}
+
+footer a {
+  @extend %body-style;
+  color: $colour-lightgrey;
+  list-style-type: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: $colour-lightgrey;
+}
+
+.footer-button {
+  transition: $transition-speed;
+}
+
+.footer-button:hover {
+  transform: $transition-scale;
+  cursor: pointer;
+}
+
+.footer-div-top p {
+  @extend %alt-subheader-style;
+  color: $colour-white;
+  text-align: center;
+}
+
+.footer-div-top p:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 860px) {
