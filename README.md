@@ -1,5 +1,5 @@
 # Travel Website Mockup
-A website for finding travel information (weather forecast, popular places, etc.) a selected city.
+A website for finding travel information (weather forecast, popular places, etc.) about a selected city.
 
 Uses data from:
 * [APIXU](https://www.apixu.com/)
