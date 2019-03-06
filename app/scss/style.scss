@@ -101,10 +101,13 @@ form {
 
 /* After clicking submit */
 
+.render-container {
+  display: none;
+}
+
 .container {
   max-width: 900px;
   margin: auto;
-  visibility: hidden;
 }
 
 .weather h2 {

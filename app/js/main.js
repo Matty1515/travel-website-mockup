@@ -13,7 +13,7 @@ const forecastUrl = 'https://api.apixu.com/v1/forecast.json?key=';
 const $input = $('#city');
 const $submit = $('#button');
 const $destination = $('#destination');
-const $container = $('.container');
+const $container = $('.render-container');
 const $venueDivs = [$("#venue1"), $("#venue2"), $("#venue3"), $("#venue4")];
 const $weatherDivs = [$("#weather1"), $("#weather2"), $("#weather3"), $("#weather4")];
 const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -25,7 +25,7 @@ $('#top-button').on('click', () => {
 
 // All CSS styles to be applied when submitted
 const submitCSS = () => {
-  $container.css("visibility", "visible");
+  $container.css("display", "block");
   window.scrollTo(0, 700);
 };
 

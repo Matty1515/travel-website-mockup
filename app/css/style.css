@@ -68,10 +68,12 @@ form {
   height: 100px; }
 
 /* After clicking submit */
+.render-container {
+  display: none; }
+
 .container {
   max-width: 900px;
-  margin: auto;
-  visibility: hidden; }
+  margin: auto; }
 
 .weather h2 {
   position: relative;
