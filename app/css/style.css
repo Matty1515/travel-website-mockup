@@ -3,6 +3,17 @@ html {
   font-size: 16px;
   scroll-behavior: smooth; }
 
+::-webkit-scrollbar {
+  width: 9px; }
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #dfdfdf;
+  border-radius: 10px; }
+
 /* ~67px */
 /* ~50px */
 /* ~38px */
@@ -30,7 +41,7 @@ main h1 {
   letter-spacing: 0.9px;
   color: #27b7c1; }
 
-p, footer a {
+p, #city, #button, footer a {
   font-family: 'Work Sans', sans-serif;
   font-size: 1rem;
   font-weight: 300;
@@ -66,6 +77,55 @@ main h1 {
 form {
   margin-top: 50px;
   height: 100px; }
+
+/* 
+#city {
+  width: 286px;
+  height: 46px;
+  border-radius: $border-radius;
+  border: solid 2.5px #ffffff;
+  background-color: inherit;
+  opacity: 0.73;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: $colour-white;
+
+  
+}
+*/
+#city {
+  width: 286px;
+  height: 46px;
+  opacity: 0.9;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid white;
+  padding-left: 10px; }
+
+#button {
+  height: 46px;
+  opacity: 0.9;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  text-align: left;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid white;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+#city:hover {
+  opacity: 1; }
+
+#button:hover {
+  cursor: pointer;
+  opacity: 1; }
 
 /* After clicking submit */
 .render-container {
@@ -125,33 +185,6 @@ form {
   display: flex;
   justify-content: space-around;
   min-height: 350px; }
-
-#city {
-  width: 286px;
-  height: 46px;
-  border-radius: 4px;
-  border: solid 2.5px #ffffff;
-  background-color: inherit;
-  opacity: 0.73;
-  font-family: Source Sans Pro;
-  font-size: 18px;
-  line-height: 1;
-  letter-spacing: 0.4px;
-  text-align: left;
-  color: white; }
-
-#button {
-  width: 140px;
-  height: 46px;
-  border-radius: 4px;
-  background-color: #27b7c1;
-  font-family: Source Sans Pro;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 0.94;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: white; }
 
 footer {
   background-color: darkslategrey;
