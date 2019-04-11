@@ -4,10 +4,10 @@ html {
   scroll-behavior: smooth; }
 
 ::-webkit-scrollbar {
-  width: 9px; }
+  width: 10px; }
 
 ::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: white;
   border-radius: 10px; }
 
 ::-webkit-scrollbar-thumb {
@@ -143,7 +143,10 @@ form {
   width: 200px;
   height: 300px;
   padding: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.5s; }
 
 .weathericon {
   width: 150px;
@@ -152,10 +155,17 @@ form {
 .venue {
   width: 275px;
   padding: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  text-align: center;
+  transition: 0.5s; }
 
 .venueimage {
   margin-top: 20px; }
+
+.weather:hover, .venue:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  margin-top: -5px; }
 
 #venues h2 {
   text-align: center;
@@ -213,7 +223,8 @@ footer a:hover {
 
 .footer-div-top p {
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.333rem; }
 
 .footer-div-top p:hover {
   cursor: pointer; }
