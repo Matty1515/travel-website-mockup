@@ -5,19 +5,6 @@ html {
   scroll-behavior: smooth;
 }
 
-// Scrollbar
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background-color: white;
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #dfdfdf;
-  border-radius: 10px;
-}
-
 // Colour scheme
 $colour-brand: #27b7c1;
 $colour-text: #4a4a4a;
@@ -92,12 +79,13 @@ p {
 }
 
 main {
-  margin: 0px auto 50px auto;
+  margin: 0px auto 0px auto;
   text-align: center;
   background-image: url("../img/travel-background5-edit.jpeg");
   background-size: cover;
   text-align: center;
   padding-bottom: 300px;
+  margin-bottom: 0px;
 }
 
 main h1 {
@@ -170,6 +158,8 @@ form {
 
 .render-container {
   display: none;
+  background-image: linear-gradient(white, #f3f3f4);
+  padding-top: 50px;
 }
 
 .container {
@@ -184,13 +174,21 @@ form {
 }
 
 .weather {
-  width: 200px;
-  height: 300px;
-  padding: 20px;
+  width: 260px;
+  height: 260px;
+  padding: 10px;
   box-shadow: $shadow;
   border-radius: $border-radius;
   text-align: center;
   transition: $transition-speed;
+  background-color: white;
+}
+
+.weather__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .weathericon {
@@ -205,6 +203,7 @@ form {
   border-radius: $border-radius;
   text-align: center;
   transition: $transition-speed;
+  background-color: white;
 }
 
 .venueimage {

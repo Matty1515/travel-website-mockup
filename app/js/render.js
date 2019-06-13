@@ -12,8 +12,10 @@ const createVenueHTML = (name, location, iconSource) => {
 
 const createWeatherHTML = (currentDay) => {
   return `<h2>${weekDays[(new Date(currentDay.date)).getDay()]}</h2>
-    <img src="https://${currentDay.day.condition.icon}" class="weathericon" />
-    <p>High: ${currentDay.day.maxtemp_f}</p>
-    <p>Low: ${currentDay.day.mintemp_f}</p>`;
+    <div class="weather__wrapper"><div class="weather__left"><img src="https://${currentDay.day.condition.icon}" class="weathericon" />
+    <p>${currentDay.day.condition.text}</p></div>
+    <div class="weather__right"><p>High: ${currentDay.day.maxtemp_c}</p>
+    <p>Average: ${currentDay.day.avgtemp_c}</p>
+    <p>Low: ${currentDay.day.mintemp_c}</p></div></div>`;
 };
 
